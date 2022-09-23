@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "aside main main main"
+    "footer footer footer footer";
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+nav {
+	grid-area: nav;
+    background-color: rgb(64, 65, 160);
+    text-align: center;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    padding: 3%;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(219, 215, 215);
+    margin-left: 0%;
+    padding-left: 1%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 12%;
+}
+
+aside strong {
+    opacity: 30%;
+}
+
+aside a:hover {
+    color: rgb(64, 65, 160);
+}
+aside a {
+    color: black;
+    text-decoration-line: none;
+    padding-bottom: 10%;
+}
+main {
+    text-align: center;
+}
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    padding: 5%;
+    max-width: 300px;
+    max-height: 500px;
+}
+
+.style {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.style p {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: auto;
+    font-size: 100%;
+}
+
+.style a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    background-color: rgb(64, 65, 160);
+    padding: 5%;
+}
+.style a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(64, 65, 160);
+}
+
+footer {
+    background-color:rgb(64, 65, 160);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2%;
+}
+footer {
+    grid-area: footer;
+}
